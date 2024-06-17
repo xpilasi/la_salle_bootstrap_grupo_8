@@ -9,21 +9,15 @@ body{
    
 }
 
-header {
+.bg-lg-success {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url('Material_Entregable1/img_responsive/header-mini.png') no-repeat center -100px / cover;
-    background-size: 100% 500px;
+    background-image: url('Material_Entregable1/img/header.jpg');
+    background-position:center;
+    background-size: cover;
     height: 360px;
   }
-
-  @media (min-width: 992px) {
-    .bg-lg-success {
-        background: url('Material_Entregable1/img/header.jpg') no-repeat center -100px / cover;
-}
-
-}
 
 h1{
     height: 300px;
@@ -153,17 +147,7 @@ p{
     margin-inline: 10px;
     
   }
-  @media (max-width: 992px) {
-    .grid_who_we_are {
-      grid-template-columns: 1fr;
-    }
-    .grid_item_1,
-    .grid_item_2,
-    .grid_item_3 {
-        grid-column: auto !important;
-        grid-row: auto !important;
-        }
-  }
+  
 
 .grid_item_1{
    
@@ -282,15 +266,6 @@ p{
     grid-gap: 2rem;
    
 }
-@media (max-width: 992px) {
-    .grid_our_services {
-      grid-template-columns: 1fr;
-    }
-    .art_our_services {
-        grid-column: auto !important;
-        grid-row: auto !important;
-        }
-  }
 
 body .h3_our_services {
     margin: 0;
@@ -407,23 +382,6 @@ body .h3_our_services {
    
     }
 
-@media (max-width: 992px) {
-    
-    .mapa-en-circulo  {
-        width: 350px; 
-        height: 350px;
-        }
-        
-    .column_location_address{
-        
-        padding-inline: 20px;
-        }
-    .address{
-        padding-top: 40px;
-        text-align: center;
-        padding-inline: 0%;
-    }
-  }
 
 /*EMAIL US  */
 
@@ -433,7 +391,6 @@ body .h3_our_services {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    
     justify-content: center;
     align-items: center;
     color: white;
@@ -441,12 +398,9 @@ body .h3_our_services {
 
 
 .contact-form {
-    /* padding: 20px; */
-    /* width: 30%; */
     justify-content: center;
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    
+    grid-template-columns: 0.7fr 1.3fr;   
 }
 
 .grid_form{
@@ -503,3 +457,55 @@ footer p{
     padding-block: 30px;
     color: white;
 }
+
+@media (max-width: 992px) {
+
+    .bg-lg-success {
+        background-image: url('Material_Entregable1/img_responsive/header-mini.png');
+        background-position:center;
+        background-size: cover;
+    
+    }
+
+    h1{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .grid_who_we_are {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_item_1,
+    .grid_item_2,
+    .grid_item_3 {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .mapa-en-circulo  {
+        width: 300px; 
+        height: 300px;
+    }
+    
+    .column_location_address{
+        
+    padding-inline: 20px;
+    }
+    .address{
+        padding-top: 40px;
+        text-align: center;
+        padding-inline: 0%;
+    }
+
+    .contact-form{
+        
+    }
+    .grid_form{
+        display: block;
+
+    }
+
+    .label_form{
+        height: 35px;
+    }
+  }
