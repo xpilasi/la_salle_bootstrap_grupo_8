@@ -395,22 +395,29 @@ body .h3_our_services {
     color: white;
 }
 
-
-.contact-form {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 0.7fr 1.3fr;   
-}
-
-.grid_form{
+.form_container{
     /* background-color: darkorange; */
-    margin: 0 auto;
-    width: 35%;
+    padding-inline: 10%;
+    height: 400px;
     
+    margin-inline: 15%;
+    align-items: center;
+    justify-content: center;
 }
+
+.form_style{
+    
+    width: 420px ;
+    min-width: 420px;
+    padding: 0;
+      
+}
+
+
+
 
 .contact-form input, .contact-form textarea {
-    padding: 10px;
+    
     border: 1px solid #ccc;
     border-radius: 5px;
     
@@ -421,21 +428,64 @@ body .h3_our_services {
     border: none;
     color: black;
     border-radius: 5px;
-    width: 100px;
+    /* width: 100px; */
+    
 
 }
 
 .label_form{
-    float:left;
-    margin-bottom: 20px;
   
+  height: 30px;
+  text-align: right;
+  padding-left: 0; 
+  width: 120px;
+  max-width: 120px;
+  margin-right: 0;
+  margin-bottom: 30px;
+    
+}
+.label_form_msg{
+    
+    height: 90px;
+    text-align: right;
+    padding-left: 0; 
+    width: 120px;
+    max-width: 120px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.inputs{  
+    
+    float:right;
+    width: 300px;
+    max-width: 610px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.inputs_textarea{  
+    float:right;
+    width: 300px;
+    height: 90px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
     
 }
 
-input{  
-    float:right;
-    margin-bottom: 10px;
+.button_send{
+    margin-left: 120px;
+    width: 60px;
+    background-color: rgb(202, 230, 230);  
     
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    padding-inline: 5px;
+
 }
 footer{
     background-color: rgb(97, 69, 140
@@ -501,6 +551,7 @@ footer p{
     }
     .grid_form{
         display: block;
+        width: auto;
 
     }
 

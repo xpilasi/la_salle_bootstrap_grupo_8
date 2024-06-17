@@ -235,31 +235,32 @@
 
 <section class="email_us">
     <h2>Email Us </h2>
-    <div class="grid_form">
+    <div class="row form_container">
 
-        <form class="contact-form" 
+        <form class="form_style" 
         method="post">
         
-            <label class="label_form">Name*:</label>
-            <input type="text" name="name" id="name" required>
+            <label class="col-md-3 label_form">Name*:</label>
+            <input class="col-md-9 inputs" type="text" name="name" id="name" required>
             
-            <label class="label_form" for="email">Email*:</label>
-            <input type="text" name="email" id="email" required>
+            <label class="col-md-3 label_form" for="email">Email*:</label>
+            <input class="col-md-9 inputs" type="text" name="email" id="email" required>
             
-            <label class="label_form" for="phone">Phone:</label>
-            <input type="text" name="phone" id="phone" required>
+            <label class="col-md-3 label_form" for="phone">Phone:</label>
+            <input class="col-md-9 inputs" type="text" name="phone" id="phone" required>
             
-            <label class="label_form" for="company-name">Company Name:</label>
-            <input type="text" name="company-name" id="company-name" required>
+            <!-- <label class="col-lg-3 label_form" for="company-name">Company Name:</label>
+            <input class="col-lg-9" type="text" name="company-name" id="company-name" required> -->
             
-            <label class="label_form"for="subject">Subject*:</label>
-            <input type="text" name="subject" id="subject" required>
+            <label class="col-md-3 label_form"for="subject">Subject*:</label>
+            <input class="col-md-9 inputs" type="text" name="subject" id="subject" required>
             
-            <label for="message">Message*:
-                </label>
-                <textarea name="message" id="message"></textarea>
-            <br>   
-            <button type="submit">send</button>
+            <label class="col-md-3 label_form_msg"for="message">Message*:</label>
+                
+            <textarea class="col-md-9 inputs_textarea" name="message" id="message"></textarea>
+            <br> 
+            
+            <button class="col-md-9 button_send"type="submit">Send</button>
         </form>
     </div>
    
