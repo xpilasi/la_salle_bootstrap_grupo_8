@@ -343,8 +343,7 @@ body .h3_our_services {
     padding-bottom: 150px; 
 }
 
-.mapa-en-circulo {
-    background-color: #c91c1c; 
+.mapa-en-circulo { 
     width: 450px; 
     height: 360px; 
     border-radius: 50%; 
@@ -507,5 +506,12 @@ footer p{
 
     .label_form{
         height: 35px;
+    }
+
+    footer p{
+        padding-left: 0;
+        justify-content: center;
+        display: flex;
+        width: 100%;
     }
   }
